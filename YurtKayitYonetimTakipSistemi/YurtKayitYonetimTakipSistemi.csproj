@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B98833A-319E-4F7E-B8CA-D7CAACB6C1CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YurtKayitYonetimTakipSistemi</RootNamespace>
+    <AssemblyName>YurtKayitYonetimTakipSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="defter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defter.Designer.cs">
+      <DependentUpon>defter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duyuruİslemleri.cs" />
+    <Compile Include="Giderİslemleri.cs" />
+    <Compile Include="GirisCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisCikis.Designer.cs">
+      <DependentUpon>GirisCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İzinGirisCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İzinGirisCikis.Designer.cs">
+      <DependentUpon>İzinGirisCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisCikisİslemleri.cs" />
+    <Compile Include="Menuler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menuler.Designer.cs">
+      <DependentUpon>Menuler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duyurular.Designer.cs">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giderler.Designer.cs">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGirisi.Designer.cs">
+      <DependentUpon>KullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menuİslemleri.cs" />
+    <Compile Include="Odalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odalar.Designer.cs">
+      <DependentUpon>Odalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaListesi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaListesi1.Designer.cs">
+      <DependentUpon>OdaListesi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaListesi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaListesi2.Designer.cs">
+      <DependentUpon>OdaListesi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaSec.Designer.cs">
+      <DependentUpon>OdaSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaOzellik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaOzellik.Designer.cs">
+      <DependentUpon>OdaOzellik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi1.Designer.cs">
+      <DependentUpon>OgrenciListesi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İzinLİstesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İzinLİstesi.Designer.cs">
+      <DependentUpon>İzinLİstesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciOdaİslemleri.cs" />
+    <Compile Include="Ogrenci_OdaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci_OdaKayit.Designer.cs">
+      <DependentUpon>Ogrenci_OdaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi5.Designer.cs">
+      <DependentUpon>OgrenciListesi5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGorev.Designer.cs">
+      <DependentUpon>PersonelGorev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelListesi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelListesi2.Designer.cs">
+      <DependentUpon>PersonelListesi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odaİslemleri.cs" />
+    <Compile Include="Odemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odemeler.Designer.cs">
+      <DependentUpon>Odemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odemeİslemleri.cs" />
+    <Compile Include="Ogrenciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciler.Designer.cs">
+      <DependentUpon>Ogrenciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi3.Designer.cs">
+      <DependentUpon>OgrenciListesi3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenciİslemleri.cs" />
+    <Compile Include="Personeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personeller.Designer.cs">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelListesi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelListesi1.Designer.cs">
+      <DependentUpon>PersonelListesi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelOdaListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelOdaListe.Designer.cs">
+      <DependentUpon>PersonelOdaListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelOdaİslemleri.cs" />
+    <Compile Include="Personel_OdaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_OdaKayit.Designer.cs">
+      <DependentUpon>Personel_OdaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personelİslemleri.cs" />
+    <Compile Include="Personelİzin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personelİzin.Designer.cs">
+      <DependentUpon>Personelİzin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sikayetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sikayetler.Designer.cs">
+      <DependentUpon>Sikayetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi4.Designer.cs">
+      <DependentUpon>OgrenciListesi4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sikayetİslemleri.cs" />
+    <Compile Include="Ogrenciİzin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenciİzin.Designer.cs">
+      <DependentUpon>Ogrenciİzin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlBaglantisi.cs" />
+    <Compile Include="YurtKayitTakipSistemiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitTakipSistemiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListesi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListesi2.Designer.cs">
+      <DependentUpon>OgrenciListesi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İzinİslemleri.cs" />
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defter.resx">
+      <DependentUpon>defter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisCikis.resx">
+      <DependentUpon>GirisCikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İzinGirisCikis.resx">
+      <DependentUpon>İzinGirisCikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menuler.resx">
+      <DependentUpon>Menuler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duyurular.resx">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giderler.resx">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGirisi.resx">
+      <DependentUpon>KullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odalar.resx">
+      <DependentUpon>Odalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaListesi1.resx">
+      <DependentUpon>OdaListesi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaListesi2.resx">
+      <DependentUpon>OdaListesi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaSec.resx">
+      <DependentUpon>OdaSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaOzellik.resx">
+      <DependentUpon>OdaOzellik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi1.resx">
+      <DependentUpon>OgrenciListesi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odemeler.resx">
+      <DependentUpon>Odemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciler.resx">
+      <DependentUpon>Ogrenciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi3.resx">
+      <DependentUpon>OgrenciListesi3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İzinLİstesi.resx">
+      <DependentUpon>İzinLİstesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci_OdaKayit.resx">
+      <DependentUpon>Ogrenci_OdaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi5.resx">
+      <DependentUpon>OgrenciListesi5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGorev.resx">
+      <DependentUpon>PersonelGorev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personeller.resx">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelListesi1.resx">
+      <DependentUpon>PersonelListesi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelListesi2.resx">
+      <DependentUpon>PersonelListesi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelOdaListe.resx">
+      <DependentUpon>PersonelOdaListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_OdaKayit.resx">
+      <DependentUpon>Personel_OdaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personelİzin.resx">
+      <DependentUpon>Personelİzin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sikayetler.resx">
+      <DependentUpon>Sikayetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi4.resx">
+      <DependentUpon>OgrenciListesi4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciİzin.resx">
+      <DependentUpon>Ogrenciİzin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListesi2.resx">
+      <DependentUpon>OgrenciListesi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="YurtKayitTakipSistemiDataSet.xsc">
+      <DependentUpon>YurtKayitTakipSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitTakipSistemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitTakipSistemiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitTakipSistemiDataSet.xss">
+      <DependentUpon>YurtKayitTakipSistemiDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
